@@ -6,7 +6,7 @@ services:
     image: siomiz/softethervpn
     restart: always
     volumes:
-      - softether_data:/usr/vpnserver
+      - data:/usr/vpnserver
     cap_add:
       - NET_ADMIN
     ports:
@@ -17,7 +17,7 @@ services:
       - 5555:5555/tcp
 
 volumes:
-  softether_data:
+  data:
     driver: local-persist
     driver_opts:
       mountpoint: /docker-data/softether

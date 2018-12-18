@@ -1,8 +1,8 @@
 start:
-        docker-compose -p softether up -d
+	docker-compose -p softether up -d
 stop:
-        docker-compose -p softether down
+	docker-compose -p softether down
 destroy:
-        docker-compose -p softether down -v
+	docker-compose -p softether down -v
 check:
-        docker-compose ps
+	docker-compose ps
