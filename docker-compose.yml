@@ -6,7 +6,7 @@ services:
     image: siomiz/softethervpn
     restart: always
     volumes:
-      - softether_data:/usr/vpnserver/vpn_server.config
+      - softether_data:/usr/vpnserver
     cap_add:
       - NET_ADMIN
     ports:
